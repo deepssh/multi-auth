@@ -9,7 +9,8 @@ end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.2'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# gem 'sqlite3'
+gem 'pg', '~> 0.15'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
@@ -34,11 +35,15 @@ gem 'jbuilder', '~> 2.5'
 gem "figaro"
 gem 'bootstrap-sass'
 gem 'devise'
-
+# gems to support auth from external sources
 gem 'omniauth-facebook'
 gem 'omniauth-twitter'
 gem "omniauth-google-oauth2"
 gem 'omniauth-linkedin'
+# Use ActiveRecord Sessions
+gem 'activerecord-session_store', '~> 1.0'
+
+gem 'faraday' 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
